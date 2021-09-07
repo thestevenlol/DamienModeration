@@ -1,0 +1,18 @@
+# Please don't break anything, Damien.
+# Do not touch anything in this section.
+database:
+  port: 3306
+  host: localhost
+  database: minecraft
+  username: root
+  password:
+# Do not touch anything in this section.
+
+prefix: "&7[&cModeration&7]&r "
+
+# messages
+ban-message-receiver: "&5You're a loser."
+ban-message-broadcast: #Leave blank if none.
+
+mute-message-receiver: "&5You're a loser."
+mute-message-broadcast: "&c%muter% has muted %muted% for:&7 %reason%."

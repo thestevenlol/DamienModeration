@@ -1,0 +1,5 @@
+name: Moderation
+version: '${project.version}'
+main: me.stevenlol.damien.Main
+api-version: 1.17
+authors: [ stevenlol ]
