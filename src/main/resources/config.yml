@@ -11,7 +11,8 @@ database:
 prefix: "&7[&cModeration&7]&r "
 
 # messages
-ban-message-receiver: "&5You're a loser."
+# ban message placeholders: %banner% %date% %reason% %duration%
+ban-message-receiver: "&cYou have been banned!\nBanned by: %banner%\nReason: %reason%\nDate: %date%\nTime left: %duration%"
 ban-message-broadcast: #Leave blank if none.
 
 mute-message-receiver: "&5You're a loser."

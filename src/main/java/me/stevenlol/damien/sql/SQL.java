@@ -2,6 +2,7 @@ package me.stevenlol.damien.sql;
 
 import lombok.SneakyThrows;
 import me.stevenlol.damien.Main;
+import org.bukkit.Bukkit;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -28,12 +29,14 @@ public class SQL {
     }
 
     private void createDatabases() throws SQLException {
-        this.connection.prepareStatement("CREATE TABLE IF NOT EXISTS damien_player_bans (" +
+        PreparedStatement createBanDB = this.connection.prepareStatement("CREATE TABLE IF NOT EXISTS damien_player_bans (" +
                 "UUID VARCHAR(100)," +
                 "BANNER VARCHAR(100)," +
                 "REASON VARCHAR(255)," +
                 "DURATION INT," +
                 "DATE VARCHAR(100))");
+
+        createBanDB.executeUpdate();
     }
 
     public void connect() {
