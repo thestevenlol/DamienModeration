@@ -17,3 +17,11 @@ ban-message-broadcast: #Leave blank if none.
 
 mute-message-receiver: "&5You're a loser."
 mute-message-broadcast: "&c%muter% has muted %muted% for:&7 %reason%."
+
+# messaging
+# placeholders: %target% %sender% %message%
+message-prefix: "&7[&eYour Prefix&7]&r "# This is used instead of the prefix at the top of the config file, since it is most likely something along the lines of "Moderation" or something.
+message-format-send: "&eTo %target%:&7 %message%"
+message-format-get: "&eFrom %sender%:&7 %message%"
+message-error: "&c/msg <player> <message>"
+spy-format: "&c[Spy] %sender% -> %target%: %message%"
